@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Menu Dropdown</title>
+</head>
+
+<style>
+    body {
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .container ul {
+        list-style: none;
+
+
+
+    }
+
+    .container ul li {
+        background-color: transparent;
+        float: left;
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        color: crimson;
+        /* ini untuk menurunkan baris*/
+        line-height: 50px;
+        border: 1px solid darkgray;
+        position: relative;
+
+    }
+
+    .container ul li:hover {
+        background-color: darkorange;
+    }
+
+    .container ul ul {
+        display: none;
+    }
+
+    .container ul li:hover>ul {
+        display: block;
+
+    }
+
+    .container ul ul ul {
+        margin-left: 200px;
+        top: 0px;
+        position: absolute;
+    }
+
+    .container ul ul>li:hover {
+        background-color: rgb(224, 64, 152);
+        color: wheat;
+    }
+
+    .container ul ul ul>li:hover {
+        background-color: rgb(125, 64, 224);
+        color: wheat;
+    }
+
+    .container ul ul ul ul>li:hover {
+        background-color: turquoise;
+        color: wheat;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Portofolio
+                <ul>
+                    <li>Web design
+                        <ul>
+                            <li>XML
+                                <ul>
+                                    <li>test menu 1</li>
+                                    <li>test menu 2</li>
+                                    <li>test menu 3</li>
+                                </ul>
+                            </li>
+                            <li>XML</li>
+                            <li>XML3</li>
+                        </ul>
+                    </li>
+                    <li>Android
+                        <ul>
+                            <li>XML</li>
+                            <li>XML</li>
+                            <li>XML3</li>
+                        </ul>
+                    </li>
+                    <li>UI/XI</li>
+                </ul>
+            </li>
+            <li>Learn</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</body>
+
+</html>
